@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Rodar testes",
+            "type": "shell",
+            "command": "python",
+            "args": ["-m", "unittest", "test_weather.py"],
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "Instalar dependências",
+            "type": "shell",
+            "command": "pip",
+            "args": ["install", "-r", "requirements.txt"],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Executar app CLI",
+            "type": "shell",
+            "command": "python",
+            "args": ["main.py"],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Executar app GUI",
+            "type": "shell",
+            "command": "python",
+            "args": ["weather_gui.py"],
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}

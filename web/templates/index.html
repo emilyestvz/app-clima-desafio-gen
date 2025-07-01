@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>App Clima IA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Previsão do Tempo com IA<span>🌍</span></h1>
+        <form id="clima-form">
+            <label for="cidade">Digite o nome da cidade:</label>
+            <input type="text" id="cidade" name="cidade" required autocomplete="off">
+            <button type="submit">Obter Clima</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
